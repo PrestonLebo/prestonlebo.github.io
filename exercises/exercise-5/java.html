@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="javastyles.css" />
+   
+  </head>
+  <body>
+    <div id="box"></div>
+    <script>
+      const box = document.getElementById("box");
+      box.onclick = () => {
+        alert("hello");
+        box.style.borderStartEndRadius = "10000000px";
+        box.style.backgroundColor = "aqua";
+        box.style.border = "dotted";
+        box.style.height = "200px";
+        box.style.width = "200px";
+      };
+
+      console.log(box);
+    </script>
+
+    <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contacts</a>
+    </nav>
+    </div>
+  </body>
+</html>
