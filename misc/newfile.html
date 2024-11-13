@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixer</title>
+
+    <style>
+      body {
+        background-color: rgb(230, 234, 235);
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Main container with background and padding */
+      #main {
+        background-color: moccasin;
+        padding: 54px 52px;
+        margin: auto;
+        max-width: 1200px; /* Maximum width for content */
+        width: 100%; /* Make the container flexible */
+        margin-top: 5em;
+      }
+
+      /* Flexbox row for layout */
+      .row {
+        display: flex;
+        gap: 2em; /* Space between columns */
+        flex-wrap: wrap; /* Allow columns to wrap on small screens */
+        justify-content: center; /* Center content horizontally */
+        margin: auto; /* Ensure the row is centered */
+        max-width: 1200px; /* Align with the #main container's width */
+        width: 100%; /* Ensure the row is responsive */
+      }
+
+      /* Column 1 (Image column) */
+      .col1 {
+        background-color: rgb(35, 123, 199);
+        flex: 1 1 300px; /* Flex layout for responsive columns */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Ensure images stack vertically */
+      }
+
+      /* Column 2 (Text column) */
+      .col2 {
+        background-color: rgb(245, 140, 11);
+        flex: 2 1 500px; /* Flex layout for responsive columns */
+        padding: 15px;
+      }
+
+      /* Call-to-action text style */
+      .call {
+        font-size: 24px;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      /* Image styling */
+      img {
+        width: 100%; /* Images will fill their container */
+        max-width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        padding: 10px;
+      }
+
+      /* Centering the images */
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%; /* Make images take up 80% of the container */
+        padding: 10px;
+      }
+
+      /* Responsive Design: Stack layout for small screens */
+      @media (max-width: 768px) {
+        .row {
+          flex-direction: column; /* Stack the columns vertically */
+          gap: 20px;
+        }
+
+        .col1,
+        .col2 {
+          width: 100%; /* Full width for columns on mobile */
+        }
+
+        .center {
+          width: 90%; /* Make images take up most of the width on small screens */
+        }
+
+        .call {
+          font-size: 18px; /* Adjust font size for smaller screens */
+        }
+
+        /* Ensure images inside .col1 stack vertically on mobile */
+        .col1 {
+          flex-direction: column; /* Stack images vertically */
+        }
+
+        /* If you want the images in .col1 to not have much spacing between them */
+        .col1 img {
+          width: 100%; /* Ensure images take up the full column width */
+          margin-bottom: 20px; /* Add spacing between images */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <!-- First Row -->
+      <div class="row">
+        <div class="col1">
+          <img src="https://placehold.co/347x492" alt="Placeholder Image" />
+        </div>
+        <div class="col2">
+          <h1>
+            Lewis Carroll’s Alice in Wonderland is a magical tale that taps into
+            a world of fantasy.
+          </h1>
+          <div class="call">Click here to learn more</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Row -->
+    <div id="main">
+      <div class="row">
+        <div class="col2">
+          <h1>George Smith ★★★★★</h1>
+          <p>
+            “Alice in Wonderland" by Lewis Carroll is a whimsical and enchanting
+            tale that takes readers on a delightful journey through a world of
+            ...
+          </p>
+          <div class="call">Read more</div>
+        </div>
+        <div class="col1">
+          <img src="Barn.webp" alt="Paris" class="center" />
+          <img src="bam.webp" alt="Paris" class="center" />
+          <img src="am.webp" alt="Paris" class="center" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

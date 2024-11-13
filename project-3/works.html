@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alice in Wonderland</title>
+    <title>Other Works</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +15,6 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-
       }
       .navbar {
         display: flex;
@@ -32,7 +31,6 @@
         font-weight: bold;
         letter-spacing: 1px;
         color: black;
-        cursor: pointer;
         text-decoration: none;
       }
       .navbar-links {
@@ -50,7 +48,7 @@
         padding: 5px;
       }
       .navbar-links a:hover {
-        color: red
+        color: red;
       }
       .hamburger {
         display: none;
@@ -91,99 +89,93 @@
       }
       body {
         background-color: #005f7c;
-        margin: 0;
-        padding: 0;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       }
       #main {
-
         padding: 54px 52px;
         margin: auto;
         max-width: 1200px;
         width: 100%;
         margin-top: 5em;
+        text-align: left;
+        color: white;
       }
-      .link-style {
-        font-size: 24px;
-        font-weight: bold;
-        color: rgb(0, 255, 255);
-        margin: auto;
-        text-decoration: none;
-        display: inline-block;
-        padding: 10px 20px;
-        text-align: center;
-      }
-      .link-style:hover {
-        color: red;
-        text-decoration: underline;
+      .title {
+        font-size: 25px;
+        text-align: left;
+        padding-bottom: 10px;
       }
       .row {
         display: flex;
-        gap: 2em;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: auto;
-        max-width: 1200px;
-        width: 100%;
-      }
-      .col1 {
-
-        flex: 1 1 300px;
-        display: flex;
-        justify-content: center;
         align-items: center;
-        flex-direction: column;
-      }
-      .col2 {
 
-        flex: 2 1 500px;
         padding: 15px;
-        text-align: center;
-      }
-      img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        padding: 10px;
-      }
-      .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-        padding: 10px;
-      }
-      .full-width-row {
-        background-color: rgb(255, 255, 255);
-        width: 100%;
-        padding: 50px 0;
-      }
-      h1 {
-        text-align: center;
+
+        width: 90%;
+        max-width: 1000px;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        justify-content: left;
         color: white;
-        padding: 10px;
       }
-      p {
-        color: white;
+      .book-image {
+        width: 150px;
+        height: 200px;
+        object-fit: cover;
+        margin-right: 20px;
+      }
+      .book-info {
+        max-width: 600px;
         font-size: 15pt;
+        color: white;
+      }
+      .book-title {
+        margin-bottom: 10px;
+        color: #333;
+        font-size: 24px;
+        color: white;
+      }
+      .book-description {
+        font-size: 1em;
+        color: white;
       }
       @media (max-width: 768px) {
         .row {
           flex-direction: column;
-          gap: 20px;
+          align-items: center;
+          text-align: center;
+          padding: 10px;
         }
-        .col1,
-        .col2 {
-          width: 100%;
-        .center {
-          width: 90%;
+        .book-image {
+          margin-right: 0;
+          margin-bottom: 10px;
+          width: 120px;
+          height: 160px;
         }
-        .col1 {
-          flex-direction: column;
+        .book-info {
+          max-width: 100%;
         }
-        .col1 img {
-          width: 100%;
-          margin-bottom: 20px;
+        .book-title {
+          font-size: 1.2em;
+        }
+        .book-description {
+          font-size: 0.9em;
+        }
+      }
+      @media (max-width: 480px) {
+        .row {
+          margin: 15px 0;
+          padding: 8px;
+        }
+        .book-title {
+          font-size: 1.1em;
+        }
+        .book-description {
+          font-size: 0.9em;
+        }
+        .book-image {
+          width: 100px;
+          height: 140px;
         }
       }
     </style>
@@ -207,40 +199,60 @@
       </div>
     </nav>
     <div id="main">
+      <!-- Title -->
+      <div class="title">
+        <h1>Other Works</h1>
+      </div>
       <div class="row">
-        <div class="col1">
-          <img src="Untitled-2.webp" alt="Placeholder Image" />
-        </div>
-        <div class="col2">
-          <h1>
-            Lewis Carroll’s Alice in Wonderland is a magical tale that taps into
-            a world of fantasy.
-          </h1>
-          <a href="book.html" class="link-style">Click here to learn more</a>
+        <img
+          src="https://via.placeholder.com/150x200"
+          alt="Book 1"
+          class="book-image"
+        />
+        <div class="book-info">
+          <div class="book-title">Through the Looking-glass</div>
+          <div class="book-description">
+            Following the success of "Alice's Adventures in Wonderland," Carroll
+            published "Through the Looking-Glass" in 1871, which continued the
+            fantastical adventures of Alice. Both books garnered critical
+            acclaim and have since become enduring classics, celebrated for
+            their blend of fantasy, satire, and linguistic playfulness.
+          </div>
         </div>
       </div>
-    </div>
-    <div class="full-width-row">
       <div class="row">
-        <div class="col2">
-          <h1 style="color: rgb(0, 0, 0)">Reviews</h1>
-          <h2 style="color: rgb(0, 0, 0); text-align: left">
-            George Smith ★★★★★
-          </h2>
-
-          <p style="color: rgb(0, 0, 0); text-align: left">
-            “Alice in Wonderland" by Lewis Carroll is a whimsical and enchanting
-            tale that takes readers on a delightful journey through a world of
-            ...
-          </p>
-
-          <a href="reviews.html" class="link-style">Read More</a>
+        <img
+          src="https://via.placeholder.com/150x200"
+          alt="Book 2"
+          class="book-image"
+        />
+        <div class="book-info">
+          <div class="book-title">Jabberwocky</div>
+          <div class="book-description">
+            Following the acclaim of his earlier works, Lewis Carroll published
+            "Jabberwocky" in 1871 as part of "Through the Looking-Glass." This
+            nonsensical poem features a fantastical tale of a young hero who
+            confronts the fearsome Jabberwock, a creature of Carroll’s
+            imaginative invention.
+          </div>
         </div>
-        <div class="col1">
-          <h1 style="color: rgb(0, 0, 0)">Retailers</h1>
-          <img src="Barn.webp" alt="barns_and_noble" class="center" />
-          <img src="bam.webp" alt="books_a_million" class="center" />
-          <img src="am.webp" alt="amazon" class="center" />
+      </div>
+      <div class="row">
+        <img
+          src="https://via.placeholder.com/150x200"
+          alt="Book 3"
+          class="book-image"
+        />
+        <div class="book-info">
+          <div class="book-title">The Hunting of the Snark</div>
+          <div class="book-description">
+            Lewis Carroll's "The Hunting of the Snark," (1876) is a whimsical
+            poem that takes readers on a surreal journey through a fantastical
+            world inhabited by an eccentric cast of characters, including the
+            Bellman, the Baker, and the illusive Snark. The poem unfolds as a
+            narrative of a bizarre expedition to capture the Snark, a creature
+            that embodies the essence of the unknown.
+          </div>
         </div>
       </div>
     </div>
