@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo-ribbon">
+        <a href="index.html">
+          <img src="bammy final logo.png" alt="Logo" />
+        </a>
+      </div>
+
+      <div class="hamburger-menu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="page-tabs">
+        <a href="about_pat.html" class="page-tab">About Pat</a>
+        <a href="menu.html" class="page-tab">Menu</a>
+        <a href="events.html" class="page-tab">Events</a>
+        <a href="merchandise.html" class="page-tab">Merchandise</a>
+      </div>
+
+      <div class="dropdown-menu">
+        <a href="about_pat.html">About Pat</a>
+        <a href="menu.html">Menu</a>
+        <a href="events.html">Events</a>
+        <a href="merchandise.html">Merchandise</a>
+      </div>
+    </nav>
+    <div class="main-content">
+      <div class="description-row">
+        <img
+          src="events 1.webp"
+          alt="Image 1"
+          class="row-image"
+        />
+        <div class="row-text">
+          <h2>Winter Necessities Drive - Ends Dec 20th</h2>
+          <p>
+            Join us in supporting our community this winter by donating essential items for those in need. Your contributions, whether it's warm clothing, blankets, or other winter essentials, can make a world of difference. Help us spread warmth and kindness this season—every donation counts!
+          </p>
+        </div>
+      </div>
+      <div class="row-divider"></div>
+
+      <div class="description-row">
+        <img
+          src="events 2.webp"
+          alt="Image 2"
+          class="row-image"
+        />
+        <div class="row-text">
+          <h2>Holiday Cheer Toy Drive - Ends Dec 20th</h2>
+          <p>
+            This holiday season, help bring joy to children in need by donating new, unwrapped toys. Your generous contributions will brighten the holidays for families and ensure that every child experiences the magic of giving. Together, we can make this season a little brighter for those who need it most!
+          </p>
+        </div>
+      </div>
+      <div class="row-divider"></div>
+
+      <div class="description-row">
+        <img
+          src="events 3.webp"
+          alt="Image 3"
+          class="row-image"
+        />
+        <div class="row-text">
+          <h2>Community Canned Food Drive - Ends Jan 30th</h2>
+          <p>
+            Help fight hunger in our community by donating canned goods and non-perishable food items. Every donation provides a meal for a family in need, ensuring that no one goes without this season. Let’s come together to share kindness and make a lasting impact on those facing 
+food insecurity.
+          </p>
+        </div>
+    <script>
+      function toggleMenu() {
+        const dropdownMenu = document.querySelector(".dropdown-menu");
+        dropdownMenu.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>

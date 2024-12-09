@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pat's Cafe</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .home-container {
+        display: flex;
+        padding-top: 100px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .home-container h2 {
+        font-size: 36px;
+        color: #000;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+
+      <div class="logo-ribbon">
+        <a href="index.html">
+          <img src="bammy final logo.png" alt="Logo" />
+        </a>
+      </div>
+
+      <div class="hamburger-menu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="page-tabs">
+        <a href="about_pat.html" class="page-tab">About Pat</a>
+        <a href="menu.html" class="page-tab">Menu</a>
+        <a href="events.html" class="page-tab">Events</a>
+        <a href="merchandise.html" class="page-tab">Merchandise</a>
+      </div>
+
+      <div class="dropdown-menu">
+        <a href="about_pat.html">About Pat</a>
+        <a href="menu.html">Menu</a>
+        <a href="events.html">Events</a>
+        <a href="merchandise.html">Merchandise</a>
+      </div>
+    </nav>
+    <div class="main-content">
+      <div class="centered-image">
+        <img src="bammy back cover circle new.webp" alt="Bammy Image" />
+      </div>
+      <div class="button-container">
+        <a href="about_pat.html" class="pill-button"> About Pat </a>
+
+        <a href="menu.html" class="pill-button"> Let's Fress </a>
+      </div>
+      <div class="home-container">
+        <h2>Mon-Thurs: 7am - 3pm</h2>
+        <h2>Friday: 7am - 7pm</h2>
+        <h2>Sat and Sun: 8am - 3pm</h2>
+      </div>
+      <div class="home-container">
+        <h2>123-456-7890</h2>
+        <h2>1234 Address Road</h2>
+        <h2>Millersberg, PA areacode</h2>
+      </div>
+      <div class="home-container">
+        <h2>(c)2024 Pat's Diner</h2>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        const dropdownMenu = document.querySelector(".dropdown-menu");
+        dropdownMenu.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>

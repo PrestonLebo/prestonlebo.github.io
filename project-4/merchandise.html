@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merchandise</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo-ribbon">
+        <a href="index.html">
+          <img src="bammy final logo.png" alt="Logo" />
+        </a>
+      </div>
+
+      <div class="hamburger-menu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="page-tabs">
+        <a href="about_pat.html" class="page-tab">About Pat</a>
+        <a href="menu.html" class="page-tab">Menu</a>
+        <a href="events.html" class="page-tab">Events</a>
+        <a href="merchandise.html" class="page-tab">Merchandise</a>
+      </div>
+
+      <div class="dropdown-menu">
+        <a href="about_pat.html">About Pat</a>
+        <a href="menu.html">Menu</a>
+        <a href="events.html">Events</a>
+        <a href="merchandise.html">Merchandise</a>
+      </div>
+    </nav>
+
+    <div class="main-content">
+      <div class="merchandise-page">
+        <h1 class="merchandise-title">Rep Pat</h1>
+        
+        <div class="products-container">
+          <div class="product-item">
+            <img src="merch 1.webp" alt="Item 1" class="product-image">
+            <div class="product-info">
+              <h2 class="product-name">T-shirt</h2>
+              <p class="product-price">$15.00</p>
+            </div>
+          </div>
+          
+          <div class="product-item">
+            <img src="merch 2.webp" alt="Item 2" class="product-image">
+            <div class="product-info">
+              <h2 class="product-name">Mug</h2>
+              <p class="product-price">$12.00</p>
+            </div>
+          </div>
+          
+          <div class="product-item">
+            <img src="merch 3.webp" alt="Item 3" class="product-image">
+            <div class="product-info">
+              <h2 class="product-name">Tote Bag</h2>
+              <p class="product-price">$10.00</p>
+            </div>
+          </div>
+          
+          <div class="product-item">
+            <img src="merch 4.webp" alt="Item 4" class="product-image">
+            <div class="product-info">
+              <h2 class="product-name">Coaster</h2>
+              <p class="product-price">$9.00</p>
+            </div>
+          </div>
+          
+          <div class="product-item">
+            <img src="merch 5.webp" alt="Item 5" class="product-image">
+            <div class="product-info">
+              <h2 class="product-name">Dark Roast 4oz</h2>
+              <p class="product-price">$8.00</p>
+            </div>
+          </div>
+          
+          <div class="product-item">
+            <img src="merch 6.webp" alt="Item 6" class="product-image">
+            <div class="product-info">
+              <h2 class="product-name">Breakfast Blend 4oz</h2>
+              <p class="product-price">$28.00</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+    <script>
+      function toggleMenu() {
+        const dropdownMenu = document.querySelector(".dropdown-menu");
+        dropdownMenu.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>

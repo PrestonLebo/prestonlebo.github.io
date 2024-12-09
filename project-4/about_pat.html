@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Pat</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo-ribbon">
+        <a href="index.html">
+          <img src="bammy final logo.png" alt="Logo" />
+        </a>
+      </div>
+
+      <div class="hamburger-menu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="page-tabs">
+        <a href="about_pat.html" class="page-tab">About Pat</a>
+        <a href="menu.html" class="page-tab">Menu</a>
+        <a href="events.html" class="page-tab">Events</a>
+        <a href="merchandise.html" class="page-tab">Merchandise</a>
+      </div>
+
+      <div class="dropdown-menu">
+        <a href="about_pat.html">About Pat</a>
+        <a href="menu.html">Menu</a>
+        <a href="events.html">Events</a>
+        <a href="merchandise.html">Merchandise</a>
+      </div>
+    </nav>
+
+    <div class="main-content">
+      <div class="imagetext">
+        <img src="about us image 4.webp" alt="coffee" class="image" />
+        <div class="text">
+          <h2>Our Story</h2>
+          <p>
+            The story of Grandma Pat’s Cafe begins with one woman’s love for
+            java and her desire to share that love with others. Patricia "Pat"
+            Lebo—fondly known as Pat—opened the doors of our cafe in 1985,
+            inspired by the warmth and comfort of her favorite coffee house in
+            Trenton PA.
+          </p>
+        </div>
+      </div>
+      <div class="main-content-whiteb">
+        <div class="center-text"></div>
+        <h2>"Hospitality inspired by faith, one cup at a time."</h2>
+      </div>
+    </div>
+    <script>
+      function toggleMenu() {
+        const dropdownMenu = document.querySelector(".dropdown-menu");
+        dropdownMenu.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>
